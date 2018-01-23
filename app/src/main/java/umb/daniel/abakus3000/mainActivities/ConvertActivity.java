@@ -5,6 +5,8 @@ import android.app.FragmentTransaction;
 import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MotionEvent;
+import android.view.View;
 
 import umb.daniel.abakus3000.Decimal;
 import umb.daniel.abakus3000.mainActivities.databinding.ActivityConvertBinding;
@@ -12,8 +14,16 @@ import umb.daniel.abakus3000.mainActivities.databinding.ActivityConvertBinding;
 
 public class ConvertActivity extends AppCompatActivity implements Decimal.OnFragmentInteractionListener {
 
-    ActivityConvertBinding binding;
-    StringBuffer buf = new StringBuffer();
+    private ActivityConvertBinding binding;
+
+    enum base
+    {
+        DEC,
+        BIN,
+        HEX
+    }
+
+    private base baseSelected;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +36,7 @@ public class ConvertActivity extends AppCompatActivity implements Decimal.OnFrag
         fragmentTransaction.add(R.id.fragment_container, fragment);
         fragmentTransaction.commit();
 
+        addEditTextListeners();
     }
 
     @Override
@@ -42,4 +53,52 @@ public class ConvertActivity extends AppCompatActivity implements Decimal.OnFrag
         }
     }
 
+    private void addEditTextListeners()
+    {
+        binding.txtDec.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                if (hasFocus) {
+                    baseSelected = base.DEC;
+                }
+            }
+        });
+
+        binding.txtBin.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                if (hasFocus) {
+                    baseSelected = base.BIN;
+                }
+            }
+        });
+
+        binding.txtHex.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                if (hasFocus) {
+                    baseSelected = base.HEX;
+                }
+            }
+        });
+
+        binding.txtDec.setOnTouchListener(new View.OnTouchListener(){
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                return true;
+            }
+        });
+        binding.txtBin.setOnTouchListener(new View.OnTouchListener(){
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                return true;
+            }
+        });
+        binding.txtHex.setOnTouchListener(new View.OnTouchListener(){
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                return true;
+            }
+        });
+    }
 }
