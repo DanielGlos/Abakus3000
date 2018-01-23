@@ -106,6 +106,16 @@
             android:layout_below="@id/btn_dva"
             android:layout_toRightOf="@id/btn_jedna"/>
 
+        <Button
+            android:id="@+id/btn_clear"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="C"
+            android:layout_below="@id/btn_tri"
+            android:layout_toRightOf="@id/btn_nula"/>
+
     </RelativeLayout>
 
 </FrameLayout>

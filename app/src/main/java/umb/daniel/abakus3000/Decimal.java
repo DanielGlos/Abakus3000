@@ -132,6 +132,7 @@ public class Decimal extends Fragment {
         final Button btn_dva = view.findViewById(R.id.btn_dva);
         final Button btn_tri = view.findViewById(R.id.btn_tri);
         final Button btn_nula = view.findViewById(R.id.btn_nula);
+        final Button btn_clear = view.findViewById(R.id.btn_clear);
 
         btn_sedem.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -200,6 +201,13 @@ public class Decimal extends Fragment {
             @Override
             public void onClick(View view) {
                 onButtonPressed(btn_nula.getText().toString());
+            }
+        });
+
+        btn_clear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onButtonPressed(btn_clear.getText().toString());
             }
         });
     }
