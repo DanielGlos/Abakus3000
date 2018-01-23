@@ -37,14 +37,16 @@ public class ConvertActivity extends AppCompatActivity implements Decimal.OnFrag
             binding.txtHex.setText(null);
         }else {
             binding.txtDec.setText(binding.txtDec.getText() + text);
-            convertToBin(Integer.parseInt(binding.txtDec.getText().toString()));
+            convertToBin(Long.parseLong(binding.txtDec.getText().toString()));
             binding.txtBin.setText(buf);
             buf = new StringBuffer();
+            buf.setLength(100);
+            binding.txtHex.setText(Long.toHexString(Long.parseLong(binding.txtDec.getText().toString())));
         }
 
     }
 
-    private void convertToBin(int number)
+    private void convertToBin(Long number)
     {
         int remainder;
 
@@ -53,7 +55,7 @@ public class ConvertActivity extends AppCompatActivity implements Decimal.OnFrag
             return;
         }
 
-        remainder = number %2;
+        remainder = (int)(number %2);
         convertToBin(number >> 1);
         buf.append(remainder);
     }
