@@ -1,14 +1,20 @@
 package umb.daniel.abakus3000;
 
 import android.content.Context;
+import android.databinding.DataBindingUtil;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
+import android.renderscript.ScriptGroup;
+import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 
 import umb.daniel.abakus3000.mainActivities.R;
+import umb.daniel.abakus3000.mainActivities.databinding.ActivityCalcBinding;
 
 
 /**
@@ -28,6 +34,8 @@ public class Decimal extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    private View view;
 
     private OnFragmentInteractionListener mListener;
 
@@ -60,19 +68,24 @@ public class Decimal extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_decimal, container, false);
+        view = inflater.inflate(R.layout.fragment_decimal, container, false);
+
+        addOnClickListeners();
+
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
+    public void onButtonPressed(String text) {
         if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
+            mListener.onFragmentInteraction(text);
         }
     }
 
@@ -105,6 +118,90 @@ public class Decimal extends Fragment {
      */
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
-        void onFragmentInteraction(Uri uri);
+        void onFragmentInteraction(String text);
     }
+
+    private void addOnClickListeners(){
+        final Button btn_sedem = view.findViewById(R.id.btn_sedem);
+        final Button btn_osem = view.findViewById(R.id.btn_osem);
+        final Button btn_devat = view.findViewById(R.id.btn_devat);
+        final Button btn_styri = view.findViewById(R.id.btn_styri);
+        final Button btn_pat = view.findViewById(R.id.btn_pat);
+        final Button btn_sest = view.findViewById(R.id.btn_sest);
+        final Button btn_jeden = view.findViewById(R.id.btn_jedna);
+        final Button btn_dva = view.findViewById(R.id.btn_dva);
+        final Button btn_tri = view.findViewById(R.id.btn_tri);
+        final Button btn_nula = view.findViewById(R.id.btn_nula);
+
+        btn_sedem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onButtonPressed(btn_sedem.getText().toString());
+            }
+        });
+
+        btn_osem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onButtonPressed(btn_osem.getText().toString());
+            }
+        });
+
+        btn_devat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onButtonPressed(btn_devat.getText().toString());
+            }
+        });
+
+        btn_styri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onButtonPressed(btn_styri.getText().toString());
+            }
+        });
+
+        btn_pat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onButtonPressed(btn_pat.getText().toString());
+            }
+        });
+
+        btn_sest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onButtonPressed(btn_sest.getText().toString());
+            }
+        });
+
+        btn_jeden.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onButtonPressed(btn_jeden.getText().toString());
+            }
+        });
+
+        btn_dva.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onButtonPressed(btn_dva.getText().toString());
+            }
+        });
+
+        btn_tri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onButtonPressed(btn_tri.getText().toString());
+            }
+        });
+
+        btn_nula.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onButtonPressed(btn_nula.getText().toString());
+            }
+        });
+    }
+
 }
