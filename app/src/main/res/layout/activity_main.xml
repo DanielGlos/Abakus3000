@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="umb.daniel.abakus3000.MainActivity"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abakus 3000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:textSize="24dp"/>
+
+    <Button
+        android:id="@+id/btn_calculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_calculator"
+        android:layout_above="@+id/btn_convert"
+        style="@style/stl_btns"
+        android:onClick="btn_calculator_click"/>
+
+    <Button
+        android:id="@+id/btn_convert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/txt_prevody"
+        style="@style/stl_btns"
+        android:onClick="btn_convert_click"/>
+
+    <Button
+        android:id="@+id/btn_functions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_funkcie"
+        android:layout_below="@id/btn_convert"
+        style="@style/stl_btns"
+        android:onClick="btn_functions_click"/>
+
+</RelativeLayout>

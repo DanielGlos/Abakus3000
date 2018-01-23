@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="umb.daniel.abakus3000.mainActivities.CalcActivity"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/lbl_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:textSize="30sp"/>
+
+        <EditText
+            android:id="@+id/txt_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lbl_info"
+            android:textSize="30sp"
+            android:cursorVisible="false"/>
+
+        <Button
+            android:id="@+id/btn_sedem"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_clear"
+            android:text="7"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_osem"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="8"
+            android:layout_below="@id/btn_clear"
+            android:layout_toRightOf="@id/btn_sedem"/>
+
+        <Button
+            android:id="@+id/btn_devat"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="9"
+            android:layout_below="@id/btn_clear"
+            android:layout_toRightOf="@id/btn_osem"/>
+
+        <Button
+            android:id="@+id/btn_styri"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="4"
+            android:layout_below="@id/btn_sedem"/>
+
+        <Button
+            android:id="@+id/btn_pat"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="5"
+            android:layout_below="@id/btn_osem"
+            android:layout_toRightOf="@id/btn_styri"/>
+
+        <Button
+            android:id="@+id/btn_sest"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="6"
+            android:layout_below="@id/btn_devat"
+            android:layout_toRightOf="@id/btn_pat"/>
+
+        <Button
+            android:id="@+id/btn_jedna"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="1"
+            android:layout_below="@id/btn_styri"/>
+
+        <Button
+            android:id="@+id/btn_dva"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="2"
+            android:layout_below="@id/btn_pat"
+            android:layout_toRightOf="@id/btn_jedna"/>
+
+        <Button
+            android:id="@+id/btn_tri"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="3"
+            android:layout_below="@id/btn_sest"
+            android:layout_toRightOf="@id/btn_dva"/>
+
+        <Button
+            android:id="@+id/btn_ciarka"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="."
+            android:layout_below="@id/btn_jedna"/>
+
+        <Button
+            android:id="@+id/btn_nula"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="0"
+            android:layout_below="@id/btn_dva"
+            android:layout_toRightOf="@id/btn_ciarka"/>
+
+        <Button
+            android:id="@+id/btn_rovnasa"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="="
+            android:layout_below="@id/btn_tri"
+            android:layout_toRightOf="@id/btn_nula"/>
+
+        <Button
+            android:id="@+id/btn_delene"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="/"
+            android:layout_below="@id/btn_clear"
+            android:layout_toRightOf="@id/btn_devat"/>
+
+        <Button
+            android:id="@+id/btn_krat"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="*"
+            android:layout_below="@id/btn_delene"
+            android:layout_toRightOf="@id/btn_sest"/>
+
+
+        <Button
+            android:id="@+id/btn_minus"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="-"
+            android:layout_below="@id/btn_krat"
+            android:layout_toRightOf="@id/btn_tri"/>
+
+
+        <Button
+            android:id="@+id/btn_plus"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="+"
+            android:layout_below="@id/btn_minus"
+            android:layout_toRightOf="@id/btn_rovnasa"/>
+
+
+        <Button
+            android:id="@+id/btn_clear"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="C"
+            android:layout_below="@id/txt_field"
+            android:layout_toRightOf="@id/btn_devat"/>
+
+
+    </RelativeLayout>
+</layout>
