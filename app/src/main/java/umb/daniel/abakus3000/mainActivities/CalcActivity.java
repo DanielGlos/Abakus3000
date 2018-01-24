@@ -193,6 +193,8 @@ public class CalcActivity extends AppCompatActivity {
             public void onClick(View view) {
                 binding.txtField.setText(null);
                 binding.lblInfo.setText(null);
+                valueOne = Double.NaN;
+                valueTwo = Double.NaN;
                 numLast = false;
             }
         });

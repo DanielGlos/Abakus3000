@@ -3,7 +3,6 @@ package umb.daniel.abakus3000.mainActivities;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.databinding.DataBindingUtil;
-import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -47,13 +46,11 @@ public class ConvertActivity extends AppCompatActivity implements Dec.OnFragment
     public void decOnFragmentInteraction(String text) {
         if (text.equals("CE"))
         {
-            binding.txtDec.setText(null);
-            binding.txtBin.setText(null);
-            binding.txtHex.setText(null);
-        }else if(baseSelected == base.DEC){
+            clear();
+        }else if(baseSelected == base.DEC && binding.txtDec.getText().length() < 15){
             binding.txtDec.setText(binding.txtDec.getText() + text);
             binding.txtBin.setText(Long.toBinaryString(Long.parseLong(binding.txtDec.getText().toString())));
-            binding.txtHex.setText(Long.toHexString(Long.parseLong(binding.txtDec.getText().toString())));
+            binding.txtHex.setText( Long.toHexString(Long.parseLong(binding.txtDec.getText().toString())).toUpperCase());
         }
     }
 
@@ -61,13 +58,11 @@ public class ConvertActivity extends AppCompatActivity implements Dec.OnFragment
     public void hexOnFragmentInteraction(String text) {
         if (text.equals("CE"))
         {
-            binding.txtDec.setText(null);
-            binding.txtBin.setText(null);
-            binding.txtHex.setText(null);
-        }else if(baseSelected == base.HEX){
-//            binding.txtHex.setText(binding.txtHex.getText() + text);
-//            binding.txtBin.setText(Long.toBinaryString(Long.parseLong(binding.txtDec.getText().toString())));
-//            binding.txtHex.setText(Long.toHexString(Long.parseLong(binding.txtDec.getText().toString())));
+            clear();
+        }else if(baseSelected == base.HEX && binding.txtHex.getText().length() < 10){
+            binding.txtHex.setText(binding.txtHex.getText() + text);
+            binding.txtBin.setText(Long.toBinaryString(Long.parseLong(binding.txtHex.getText().toString(), 16)));
+            binding.txtDec.setText(Long.toString(Long.parseLong(binding.txtBin.getText().toString(), 2)));
         }
     }
 
@@ -75,13 +70,11 @@ public class ConvertActivity extends AppCompatActivity implements Dec.OnFragment
     public void binOnFragmentInteraction(String text) {
         if (text.equals("CE"))
         {
-            binding.txtDec.setText(null);
-            binding.txtBin.setText(null);
-            binding.txtHex.setText(null);
-        }else if(baseSelected == base.BIN){
+            clear();
+        }else if(baseSelected == base.BIN && binding.txtBin.getText().length() < 44){
             binding.txtBin.setText(binding.txtBin.getText() + text);
             binding.txtDec.setText(Long.toString(Long.parseLong(binding.txtBin.getText().toString(), 2)));
-            binding.txtHex.setText(Long.toString(Long.parseLong(binding.txtDec.getText().toString(),16)));
+            binding.txtHex.setText(Long.toHexString(Long.parseLong(binding.txtDec.getText().toString())).toUpperCase());
         }
     }
 
@@ -147,5 +140,12 @@ public class ConvertActivity extends AppCompatActivity implements Dec.OnFragment
                 return true;
             }
         });
+    }
+
+    private void clear()
+    {
+        binding.txtDec.setText(null);
+        binding.txtBin.setText(null);
+        binding.txtHex.setText(null);
     }
 }

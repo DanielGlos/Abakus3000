@@ -21,7 +21,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="30sp"
-            android:cursorVisible="false"/>
+            android:cursorVisible="false"
+            android:maxLength="15"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -180,13 +181,13 @@
                 android:text="0"/>
 
             <Button
-                android:id="@+id/btn_rovnasa"
+                android:id="@+id/btn_clear"
                 style="@style/Base.Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textSize="20sp"
-                android:text="="/>
+                android:text="CE"/>
 
             <Button
                 android:id="@+id/btn_plus"
@@ -200,13 +201,13 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/btn_clear"
+            android:id="@+id/btn_rovnasa"
             style="@style/Base.Widget.AppCompat.Button.Borderless"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textSize="20sp"
-            android:text="CE"
+            android:text="="
             android:layout_below="@id/txt_field"
             android:layout_toRightOf="@id/btn_devat"/>
 
