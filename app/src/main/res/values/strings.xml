@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">Abakus 3000</string>
-    <string name="txt_calculator">Kalkulačka</string>
-    <string name="txt_prevody">Prevody</string>
-    <string name="txt_funkcie">Funkcie</string>
+    <string name="lbl_calculator">Kalkulačka</string>
+    <string name="lbl_prevody">Prevody</string>
+    <string name="lbl_funkcie">Funkcie</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lbl_kvad">Kvadraticka rovnica</string>
+    <string name="lbl_rovnica">ax2 + bx + c = 0</string>
+    <string name="lbl_zadajRov">Zadaj rovnicu v trave</string>
+    <string name="lbl_spocitaj">Spocitaj</string>
 </resources>

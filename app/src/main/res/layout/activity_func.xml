@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="16dp"
-    tools:context="umb.daniel.abakus3000.mainActivities.FuncActivity">
-
-    <Button
-        android:id="@+id/btn_func1"
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btn_func2"/>
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical"
+        tools:context="umb.daniel.abakus3000.mainActivities.FuncActivity">
 
-    <Button
-        android:id="@+id/btn_func2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/btn_func3"/>
+        <Button
+            android:id="@+id/btn_func1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_kvad"
+            style="@style/stl_btns"/>
 
-    <Button
-        android:id="@+id/btn_func3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true" />
+        <Button
+            android:id="@+id/btn_func2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
-    <Button
-        android:id="@+id/btn_func4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btn_func3"/>
+        <Button
+            android:id="@+id/btn_func3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
-    <Button
-        android:id="@+id/btn_func5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btn_func4"/>
+        <Button
+            android:id="@+id/btn_func4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/btn_func5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</layout>

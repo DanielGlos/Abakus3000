@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="umb.daniel.abakus3000.mainActivities.functionsActivities.KvadActivity">
+
+
+    <TextView
+        android:id="@+id/txtKvad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="@string/lbl_kvad"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/txtZadaj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_zadajRov"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtKvad"
+        android:layout_marginTop="60dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/txtRovnica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_rovnica"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtZadaj"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtRovnica"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="120dp"/>
+
+    <Button
+        android:id="@+id/btn_rataj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/input"
+        android:layout_marginTop="20dp"
+        android:text="@string/lbl_spocitaj"
+        style="@style/stl_btns"/>
+
+
+</RelativeLayout>
+</layout>

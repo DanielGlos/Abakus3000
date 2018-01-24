@@ -3,11 +3,8 @@ package umb.daniel.abakus3000.mainActivities;
 import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.InputType;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.WindowManager;
-import android.widget.Button;
 
 import java.text.DecimalFormat;
 
