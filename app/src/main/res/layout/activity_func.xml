@@ -7,6 +7,7 @@
         android:gravity="center"
         android:padding="16dp"
         android:orientation="vertical"
+        android:background="@color/color_background"
         tools:context="umb.daniel.abakus3000.mainActivities.FuncActivity">
 
         <Button
@@ -14,29 +15,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/lbl_btn_kvad"
-            style="@style/stl_btns"/>
+            style="@style/stl_btns_main"/>
 
         <Button
             android:id="@+id/btn_func2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/lbl_btn_goniom"
-            style="@style/stl_btns"/>
-
-        <Button
-            android:id="@+id/btn_func3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-        <Button
-            android:id="@+id/btn_func4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-        <Button
-            android:id="@+id/btn_func5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            style="@style/stl_btns_main"/>
 
     </LinearLayout>
 </layout>

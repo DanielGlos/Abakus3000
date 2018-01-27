@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
+    android:background="@color/color_background"
     tools:context="umb.daniel.abakus3000.mainActivities.functionsActivities.GoniomActivity">
 
     <TextView
@@ -15,7 +16,7 @@
         android:paddingTop="16dp"
         android:text="@string/lbl_btn_goniom"
         android:layout_marginTop="45dp"
-        android:textSize="24sp"/>
+        style="@style/stl_texts"/>
 
     <TextView
         android:id="@+id/txtZadaj"
@@ -23,6 +24,7 @@
         android:layout_height="wrap_content"
         android:text="@string/lbl_zadajUhol"
         android:layout_marginTop="60dp"
+        style="@style/stl_texts"
         android:textSize="18sp"/>
 
     <TextView
@@ -30,6 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        style="@style/stl_texts"
         android:textSize="18sp"/>
 
     <TextView
@@ -37,6 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        style="@style/stl_texts"
         android:textSize="18sp"/>
 
     <TextView
@@ -44,6 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        style="@style/stl_texts"
         android:textSize="18sp"/>
 
     <EditText
@@ -62,7 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/lbl_btn_spocitaj"
-        style="@style/stl_btns"/>
+        style="@style/stl_btns_main"/>
 
 </LinearLayout>
 </layout>

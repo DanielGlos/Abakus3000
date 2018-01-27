@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/color_background"
     tools:context="umb.daniel.abakus3000.fragments.Bin">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -20,7 +21,7 @@
 
             <Button
                 android:id="@+id/btn_jedna"
-                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                style="@style/stl_btns"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -29,7 +30,7 @@
 
             <Button
                 android:id="@+id/btn_nula"
-                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                style="@style/stl_btns"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -40,7 +41,7 @@
 
             <Button
                 android:id="@+id/btn_clear"
-                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                style="@style/stl_btns"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"

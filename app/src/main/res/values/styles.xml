@@ -8,10 +8,28 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="stl_btns">
+    <style name="stl_btns_main">
         <item name="android:layout_marginLeft">25dp</item>
         <item name="android:layout_marginRight">25dp</item>
         <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:textColor">@color/color_Text</item>
+        <item name="android:background">@drawable/my_button</item>
+    </style>
+
+    <style name="stl_btns">
+        <item name="android:textColor">@color/color_Text</item>
+        <item name="android:background">@drawable/my_button</item>
+        <item name="android:layout_margin">1dp</item>
+    </style>
+
+    <style name="stl_texts">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/color_Text</item>
+    </style>
+
+    <style name="stl_inputs">
+        <item name="android:textColor">@color/color_Text</item>
+
     </style>
 
 </resources>

@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@drawable/background"
     tools:context="umb.daniel.abakus3000.MainActivity"
     android:padding="16dp">
 
@@ -13,14 +14,17 @@
         android:layout_height="wrap_content"
         android:text="@string/lbl_abakus"
         android:layout_marginBottom="120dp"
-        android:textSize="24sp"/>
+        android:textStyle="bold"
+        android:textSize="40sp"
+        style="@style/stl_texts"
+        android:textColor="@color/color_Text"/>
 
     <Button
         android:id="@+id/btn_calculator"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/lbl_btn_calculator"
-        style="@style/stl_btns"
+        style="@style/stl_btns_main"
         android:onClick="btn_calculator_click"/>
 
     <Button
@@ -28,7 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/lbl_btn_prevody"
-        style="@style/stl_btns"
+        style="@style/stl_btns_main"
         android:onClick="btn_convert_click"/>
 
     <Button
@@ -36,7 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/lbl_btn_funkcie"
-        style="@style/stl_btns"
+        style="@style/stl_btns_main"
         android:onClick="btn_functions_click"/>
 
 </LinearLayout>
