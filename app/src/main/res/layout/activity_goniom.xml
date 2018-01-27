@@ -6,15 +6,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    tools:context="umb.daniel.abakus3000.mainActivities.functionsActivities.KvadActivity">
-
+    tools:context="umb.daniel.abakus3000.mainActivities.functionsActivities.GoniomActivity">
 
     <TextView
-        android:id="@+id/txtKvad"
+        android:id="@+id/txtGoniom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="16dp"
-        android:text="@string/lbl_btn_kvad"
+        android:text="@string/lbl_btn_goniom"
         android:layout_marginTop="45dp"
         android:textSize="24sp"/>
 
@@ -22,15 +21,29 @@
         android:id="@+id/txtZadaj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/lbl_zadajRov"
+        android:text="@string/lbl_zadajUhol"
         android:layout_marginTop="60dp"
         android:textSize="18sp"/>
 
     <TextView
-        android:id="@+id/txtRovnica"
+        android:id="@+id/txtSin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/lbl_rovnica"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/txtCos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/txtTan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:textSize="18sp"/>
 
     <EditText
@@ -40,8 +53,8 @@
         android:layout_marginLeft="35dp"
         android:textAlignment="center"
         android:layout_marginRight="35dp"
-        android:maxLength="10"
-        android:layout_marginTop="100dp"/>
+        android:inputType="numberDecimal"
+        android:layout_marginTop="60dp"/>
 
     <Button
         android:id="@+id/btn_rataj"
@@ -50,7 +63,6 @@
         android:layout_marginTop="20dp"
         android:text="@string/lbl_btn_spocitaj"
         style="@style/stl_btns"/>
-
 
 </LinearLayout>
 </layout>

@@ -12,4 +12,6 @@
     <string name="dialog_title">Riešenie rovnice</string>
     <string name="lbl_nemaRiesenie">Rovnica nemá riešenie alebo si ju zadal v nesprávnom tvare</string>
     <string name="lbl_btn_goniom">Goniometrické funkcie</string>
+    <string name="lbl_abakus">Abakus 3000</string>
+    <string name="lbl_zadajUhol">Zadaj uhol v stuňoch</string>
 </resources>

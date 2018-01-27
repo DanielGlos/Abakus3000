@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import umb.daniel.abakus3000.mainActivities.databinding.ActivityFuncBinding;
+import umb.daniel.abakus3000.mainActivities.functionsActivities.GoniomActivity;
 import umb.daniel.abakus3000.mainActivities.functionsActivities.KvadActivity;
 
 public class FuncActivity extends AppCompatActivity {
@@ -27,6 +28,14 @@ public class FuncActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(FuncActivity.this, KvadActivity.class);
+                FuncActivity.this.startActivity(myIntent);
+            }
+        });
+
+        binding.btnFunc2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(FuncActivity.this, GoniomActivity.class);
                 FuncActivity.this.startActivity(myIntent);
             }
         });

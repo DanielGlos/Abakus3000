@@ -26,8 +26,9 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".FuncActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".functionsActivities.KvadActivity"></activity>
+            android:screenOrientation="portrait" />
+        <activity android:name=".functionsActivities.KvadActivity" />
+        <activity android:name=".functionsActivities.GoniomActivity"></activity>
     </application>
 
 </manifest>
