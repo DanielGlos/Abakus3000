@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="16dp"
-        android:text="@string/lbl_kvad"
+        android:text="@string/lbl_btn_kvad"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="45dp"
         android:textSize="24sp"/>
@@ -43,6 +43,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/txtRovnica"
         android:layout_marginLeft="35dp"
+        android:textAlignment="center"
         android:layout_marginRight="35dp"
         android:layout_marginTop="120dp"/>
 
@@ -53,7 +54,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/input"
         android:layout_marginTop="20dp"
-        android:text="@string/lbl_spocitaj"
+        android:text="@string/lbl_btn_spocitaj"
         style="@style/stl_btns"/>
 
 

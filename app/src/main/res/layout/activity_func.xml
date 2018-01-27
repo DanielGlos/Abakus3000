@@ -12,13 +12,15 @@
             android:id="@+id/btn_func1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/lbl_kvad"
+            android:text="@string/lbl_btn_kvad"
             style="@style/stl_btns"/>
 
         <Button
             android:id="@+id/btn_func2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_btn_goniom"
+            style="@style/stl_btns"/>
 
         <Button
             android:id="@+id/btn_func3"

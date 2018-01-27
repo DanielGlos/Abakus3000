@@ -18,7 +18,7 @@
         android:id="@+id/btn_calculator"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lbl_calculator"
+        android:text="@string/lbl_calculator_btn"
         android:layout_above="@+id/btn_convert"
         style="@style/stl_btns"
         android:onClick="btn_calculator_click"/>
@@ -28,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="@string/lbl_prevody"
+        android:text="@string/lbl_btn_prevody"
         style="@style/stl_btns"
         android:onClick="btn_convert_click"/>
 
@@ -36,7 +36,7 @@
         android:id="@+id/btn_functions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lbl_funkcie"
+        android:text="@string/lbl_btn_funkcie"
         android:layout_below="@id/btn_convert"
         style="@style/stl_btns"
         android:onClick="btn_functions_click"/>

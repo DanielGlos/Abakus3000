@@ -1,6 +1,7 @@
 package umb.daniel.abakus3000.mainActivities.functionsActivities;
 
 import android.databinding.DataBindingUtil;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -24,7 +25,7 @@ public class KvadActivity extends AppCompatActivity {
         binding.btnRataj.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                quadParse(binding.input.getText().toString().trim());
+                calculate(binding.input.getText().toString().trim());
             }
         });
     }
@@ -41,12 +42,30 @@ public class KvadActivity extends AppCompatActivity {
         return (temp.length() == 1) ? (value + 1) : value;
     }
 
-    private void quadParse(String arg) {
+    private void calculate(String arg) {
         String str = ("+" + arg).replaceAll("\\s", "");
 
-        double a1 = koef(str, "([+-][0-9]*)x\\^2");
-        double b1 = koef(str, "([+-][0-9]*)x(?!\\^)");
-        double c1 = koef(str, "([+-][0-9]+)(?!x)");
-        System.out.println("Values are a: " + a1 + " b: " + b1 + " c: " + c1);
+        double a = koef(str, "([+-][0-9]*)x\\^2");
+        double b = koef(str, "([+-][0-9]*)x(?!\\^)");
+        double c = koef(str, "([+-][0-9]+)(?!x)");
+
+        double temp1 = Math.sqrt(b * b - 4 * a * c);
+
+        double root1 = (-b +  temp1) / (2*a) ;
+        double root2 = (-b -  temp1) / (2*a) ;
+
+        showResults(root1, root2);
+    }
+
+    private void showResults(double root1, double root2)
+    {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        if (Double.isNaN(root1) || Double.isInfinite(root2))
+            builder.setMessage(R.string.lbl_nemaRiesenie);
+        else
+            builder.setMessage(String.format("x1 = %f\nx2 = %f", root1, root2));
+        builder.setTitle(R.string.dialog_title);
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 }
