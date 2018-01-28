@@ -5,30 +5,31 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@color/color_background"
-        tools:context="umb.daniel.abakus3000.mainActivities.ConvertActivity"
-        android:padding="16dp">
+        tools:context="umb.daniel.abakus3000.mainActivities.ConvertActivity">
 
         <EditText
             android:id="@+id/txt_dec"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:cursorVisible="false"/>
+            android:cursorVisible="false"
+            android:hint="DEC"
+            style="@style/stl_inputs"/>
 
         <EditText
             android:id="@+id/txt_bin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:cursorVisible="false"/>
+            android:cursorVisible="false"
+            android:hint="BIN"
+            style="@style/stl_inputs"/>
 
         <EditText
             android:id="@+id/txt_hex"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:cursorVisible="false"/>
+            android:cursorVisible="false"
+            android:hint="HEX"
+            style="@style/stl_inputs"/>
 
         <FrameLayout
             android:id="@+id/fragment_container"

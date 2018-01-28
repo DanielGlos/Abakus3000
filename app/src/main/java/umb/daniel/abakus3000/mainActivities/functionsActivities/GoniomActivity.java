@@ -29,9 +29,9 @@ public class GoniomActivity extends AppCompatActivity {
     }
 
     private void calculate(Double uhol) {
-        binding.txtSin.setText(String.format(Locale.getDefault(),"Sin = %f", Math.sin(uhol)));
-        binding.txtCos.setText(String.format(Locale.getDefault(),"Cos = %f", Math.cos(uhol)));
-        binding.txtTan.setText(String.format(Locale.getDefault(),"Tan= %f", Math.tan(uhol)));
+        binding.txtSin.setText(String.format(Locale.getDefault(),"SIN = %f", Math.sin(uhol)));
+        binding.txtCos.setText(String.format(Locale.getDefault(),"COS = %f", Math.cos(uhol)));
+        binding.txtTan.setText(String.format(Locale.getDefault(),"TAN= %f", Math.tan(uhol)));
     }
 
 

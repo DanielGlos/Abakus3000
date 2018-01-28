@@ -5,9 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/background"
-    tools:context="umb.daniel.abakus3000.MainActivity"
-    android:padding="16dp">
+    tools:context="umb.daniel.abakus3000.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -15,6 +13,10 @@
         android:text="@string/lbl_abakus"
         android:layout_marginBottom="120dp"
         android:textStyle="bold"
+        android:shadowColor="#000000"
+        android:shadowDx="12"
+        android:shadowDy="12"
+        android:shadowRadius="8"
         android:textSize="40sp"
         style="@style/stl_texts"
         android:textColor="@color/color_Text"/>

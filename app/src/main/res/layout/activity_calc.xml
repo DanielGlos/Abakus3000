@@ -5,9 +5,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@color/color_background"
-        tools:context="umb.daniel.abakus3000.mainActivities.CalcActivity"
-        android:padding="16dp">
+        tools:context="umb.daniel.abakus3000.mainActivities.CalcActivity">
 
 
         <TextView
@@ -22,9 +20,9 @@
             android:id="@+id/txt_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
             android:cursorVisible="false"
-            android:maxLength="15"/>
+            android:maxLength="15"
+            style="@style/stl_inputs"/>
 
         <LinearLayout
             android:layout_width="match_parent"
