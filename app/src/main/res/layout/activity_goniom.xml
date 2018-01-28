@@ -23,8 +23,7 @@
         android:layout_height="wrap_content"
         android:text="@string/lbl_zadajUhol"
         android:layout_marginTop="60dp"
-        style="@style/stl_texts"
-        android:textSize="18sp"/>
+        style="@style/stl_texts" />
 
     <TextView
         android:id="@+id/txtSin"
