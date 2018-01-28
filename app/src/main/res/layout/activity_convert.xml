@@ -12,6 +12,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:cursorVisible="false"
+            android:textSize="40sp"
             android:hint="DEC"
             style="@style/stl_inputs"/>
 
@@ -20,6 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:cursorVisible="false"
+            android:textSize="40sp"
             android:hint="BIN"
             style="@style/stl_inputs"/>
 
@@ -28,6 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:cursorVisible="false"
+            android:textSize="40sp"
             android:hint="HEX"
             style="@style/stl_inputs"/>
 

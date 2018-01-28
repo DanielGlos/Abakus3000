@@ -16,6 +16,7 @@
         android:paddingTop="16dp"
         android:text="@string/lbl_btn_kvad"
         android:layout_marginTop="45dp"
+        android:textSize="30sp"
         style="@style/stl_texts"/>
 
     <TextView
@@ -23,17 +24,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/lbl_zadajRov"
-        android:layout_marginTop="60dp"
-        style="@style/stl_texts"
-        android:textSize="18sp"/>
+        android:layout_marginTop="40dp"
+        style="@style/stl_texts"/>
 
     <TextView
         android:id="@+id/txtRovnica"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/lbl_rovnica"
-        style="@style/stl_texts"
-        android:textSize="18sp"/>
+        style="@style/stl_texts"/>
 
     <EditText
         android:id="@+id/input"
