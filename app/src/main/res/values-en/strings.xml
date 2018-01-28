@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Abakus 3000</string>
+    <string name="lbl_btn_calculator">Calculator</string>
+    <string name="lbl_btn_prevody">Conversions</string>
+    <string name="lbl_btn_funkcie">Functions</string>
+    <string name="lbl_btn_kvad">Quadratic equation</string>
+    <string name="lbl_zadajRov">Enter equation in format</string>
+    <string name="lbl_btn_spocitaj">Calculate</string>
+    <string name="dialog_title">Solution</string>
+    <string name="lbl_nemaRiesenie">Equation doesn\'t have solution or you entered it in wrong format</string>
+    <string name="lbl_btn_goniom">Goniometric functions</string>
+    <string name="lbl_zadajUhol">Enter angle in degrees</string>
+    <string name="lbl_hranol">Prism</string>
+    <string name="lbl_zadajStrany">Enter length of sides in format</string>
+    <string name="lbl_zlyVstup">You entered wrong input</string>
+    <string name="lbl_chybaVstupu">Input error</string>
+    <string name="lbl_valec">Cylinder</string>
+    <string name="lbl_gula">Sphere</string>
+    <string name="lbl_zadajValec">Enter radius and height in format</string>
+    <string name="lbl_zadajGulu">Enter radius of sphere</string>
+</resources>

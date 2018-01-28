@@ -23,5 +23,26 @@
             android:text="@string/lbl_btn_goniom"
             style="@style/stl_btns_main"/>
 
+        <Button
+            android:id="@+id/btn_func3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_hranol"
+            style="@style/stl_btns_main"/>
+
+        <Button
+            android:id="@+id/btn_func4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_valec"
+            style="@style/stl_btns_main"/>
+
+        <Button
+            android:id="@+id/btn_func5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_gula"
+            style="@style/stl_btns_main"/>
+
     </LinearLayout>
 </layout>

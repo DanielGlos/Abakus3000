@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        tools:context="umb.daniel.abakus3000.mainActivities.functionsActivities.HranActivity">
+
+        <TextView
+            android:id="@+id/txtHranol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="@string/lbl_hranol"
+            android:layout_marginTop="45dp"
+            android:textSize="30sp"
+            style="@style/stl_texts"/>
+
+        <TextView
+            android:id="@+id/txtZadaj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_zadajStrany"
+            android:layout_marginTop="40dp"
+            style="@style/stl_texts" />
+
+        <TextView
+            android:id="@+id/txtStrany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_strany"
+            style="@style/stl_texts"/>
+
+        <TextView
+            android:id="@+id/txtPovrch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            style="@style/stl_texts"/>
+
+        <TextView
+            android:id="@+id/txtObjem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            style="@style/stl_texts"/>
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:textAlignment="center"
+            android:layout_marginRight="35dp"
+            android:inputType="numberDecimal"
+            android:digits="0123456789.,"
+            android:layout_marginTop="20dp"
+            style="@style/stl_inputs"/>
+
+        <Button
+            android:id="@+id/btn_rataj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/lbl_btn_spocitaj"
+            style="@style/stl_btns_main"/>
+
+    </LinearLayout>
+</layout>
